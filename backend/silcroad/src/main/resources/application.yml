@@ -1,16 +1,11 @@
-
 logging:
   level:
     root: warn
-    com.example: info
+    com.silcroad: info
     org.hibernate.type.descriptor.sql: trace
 server:
   port: 8080
-  # Enable JSP modification to be applied immediately without server restart
-  servlet:
-    jsp:
-      init-parameters:
-        development: true
+
 spring:
   profiles:
     active: main
