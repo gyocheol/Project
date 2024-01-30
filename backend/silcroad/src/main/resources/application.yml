@@ -1,0 +1,28 @@
+logging:
+  level:
+    root: warn
+    com.silcroad: info
+    org.hibernate.type.descriptor.sql: trace
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: main
+    include:
+      - db
+      - login
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    hibernate:
+      # create(new table), update(add new column), none(nothing)
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        use_sql_comments: true
+        jdbc:
+          time_zone: Asia/Seoul
+    open-in-view: false

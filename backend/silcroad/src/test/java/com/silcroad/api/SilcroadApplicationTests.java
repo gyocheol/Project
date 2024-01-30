@@ -1,4 +1,4 @@
-package com.example.silcroad;
+package com.silcroad.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
