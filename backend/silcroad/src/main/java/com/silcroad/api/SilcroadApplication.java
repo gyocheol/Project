@@ -12,7 +12,7 @@ import java.util.TimeZone;
 public class SilcroadApplication {
 
 	public static void main(String[] args) {
-		System.setProperty("spring.config.name", "application,application-db");
+		System.setProperty("spring.config.name", "application,application-db,application-login");
 		SpringApplication.run(SilcroadApplication.class, args);
 	}
 

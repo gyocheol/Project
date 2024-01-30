@@ -11,6 +11,7 @@ spring:
     active: main
     include:
       - db
+      - login
 
   jpa:
     database-platform: org.hibernate.dialect.MySQL57Dialect
