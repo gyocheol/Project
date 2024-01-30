@@ -1,5 +1,6 @@
 package com.silcroad.api.service;
 
+//import com.silcroad.api.config.JwtTokenProvider;
 import com.silcroad.api.dto.UserLoginReqDto;
 import com.silcroad.api.dto.UserSignUpReqDto;
 import com.silcroad.api.entity.User;
@@ -14,6 +15,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+//    private final JwtTokenProvider jwtTokenProvider;
         
     @Override
     public void signUp(UserSignUpReqDto dto) {
@@ -43,6 +45,7 @@ public class UserServiceImpl implements UserService {
         if (!passwordEncoder.matches(dto.getPassword(), user.getPassword())) {
             throw new IllegalStateException("비밀번호가 틀렸습니다.");
         }
-        return "JWTToken";
+//        return jwtTokenProvider.accessToken(dto);
+        return "안녕";
     }
 }

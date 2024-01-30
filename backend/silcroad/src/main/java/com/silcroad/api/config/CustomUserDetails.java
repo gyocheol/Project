@@ -27,7 +27,7 @@ public class CustomUserDetails implements UserDetails {
     // 이름 또는 아이디 반환
     @Override
     public String getUsername() {
-        return ((User) user).getUsername();
+        return ((com.silcroad.api.entity.User) user).getUsername();
     }
     // 계정 만료 여부
     @Override
