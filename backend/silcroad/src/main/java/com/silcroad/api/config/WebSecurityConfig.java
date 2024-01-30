@@ -43,7 +43,7 @@ public class WebSecurityConfig {
                 .logout()
                 .logoutUrl("/home")
                 .logoutSuccessUrl("/home")
-                .deleteCookies("JSESSIONID") //세션에 저장된 아이디값 삭제
+                .deleteCookies("JSESSIONID") // 세션에 저장된 아이디값 삭제
                 .invalidateHttpSession(true)
                 .permitAll();
 
